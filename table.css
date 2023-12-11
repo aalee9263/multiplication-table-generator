@@ -2,15 +2,15 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f8f8; /* Set a background color for the entire body */
-    margin: 20px; /* Add margin to the body */
+    margin: 10px; /* Add margin to the body */
     padding: 0;
   }
   
   .container {
-    max-width: 80%;
-    margin: 20px auto; /* Add margin to the container */
+    max-width: 50%;
+    margin: 5px auto; /* Add margin to the container */
     background-color: #fff; /* Set background color for the container */
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -31,10 +31,12 @@ body {
   }
   
   input {
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 12px;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
+    font-weight: 500;
+    font-size: 18px;
   }
   
   button {
