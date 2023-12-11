@@ -64,9 +64,9 @@ body {
   
   th, td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 6px;
     text-align: center;
-    font-size: 16px; /* Increase text size for table cells */
+    font-size: 20px; /* Increase text size for table cells */
   }
   
   th {
