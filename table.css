@@ -1,33 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4; /* Background color for the whole page */
-    margin: 0;
+    background-color: #f8f8f8; /* Set a background color for the entire body */
+    margin: 20px; /* Add margin to the body */
+    padding: 0;
   }
   
   .container {
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px auto;
-    background-color: #fff; /* Background color for the table */
-    border-radius: 8px;
-    overflow: hidden;
+    max-width: 80%;
+    margin: 20px auto; /* Add margin to the container */
+    background-color: #fff; /* Set background color for the container */
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #f2f2f2;
+  h2 {
+    color: #333; /* Text color for the heading */
   }
   
   form {
@@ -42,7 +31,7 @@ body {
   }
   
   input {
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 12px;
     width: 100%;
     box-sizing: border-box;
@@ -51,7 +40,7 @@ body {
   button {
     background-color: #4caf50;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -59,5 +48,26 @@ body {
   
   button:hover {
     background-color: #45a049;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0; /* Add margin to the table */
+    background-color: #f8f8f8; /* Set background color for the table */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px; /* Increase text size for table cells */
+  }
+  
+  th {
+    background-color: #f2f2f2;
   }
   
