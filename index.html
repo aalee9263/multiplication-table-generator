@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Table Generator</title>
+</head>
+<body>
+
+  <h2>Table Generator</h2>
+
+  <label for="tableNumber">Enter the table number:</label>
+  <input type="number" id="tableNumber" placeholder="Table Number">
+
+  <label for="tableLength">Enter the table length:</label>
+  <input type="number" id="tableLength" placeholder="Table Length">
+
+  <button onclick="generateTable()">Generate Table</button>
+
+  <div id="tableContainer"></div>
+
+  <script>
+    function generateTable() {
+      var tableNumber = parseInt(document.getElementById('tableNumber').value);
+      var tableLength = parseInt(document.getElementById('tableLength').value);
+
+      if (isNaN(tableNumber) || isNaN(tableLength)) {
+        alert("Please enter valid numbers for table number and length.");
+        return;
+      }
+
+      var tableHtml = '<table>';
+      tableHtml += '<tr><th>Multiplier</th><th>Result</th></tr>';
+
+      for (var i = 1; i <= tableLength; i++) {
+        var result = tableNumber * i;
+        tableHtml += '<tr><td>' + tableNumber + ' x ' + i + '</td><td>' + result + '</td></tr>';
+      }
+
+      tableHtml += '</table>';
+
+      document.getElementById('tableContainer').innerHTML = tableHtml;
+    }
+  </script>
+
+</body>
+</html>
